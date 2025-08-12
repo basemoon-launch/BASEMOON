@@ -9,3 +9,5 @@ Next Mission Objective: Aquire fuel for liftoff. Liquid ETHER mining extraction 
 DYOR. 
 Only on BASE.
 Mission: to the MOON.
+
+BASEMOON $BMX
