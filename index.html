@@ -14,7 +14,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root { color-scheme: dark; }
-    body { background: radial-gradient(1200px 800px at 10% 10%, #10141a, #07090d 60%, #05070a); }
+    body { background: radial-gradient(1200px 800px at 10% 10%, #10141a, #07090d 60%, #05070a); margin: 0; padding: 0; }
     .card { backdrop-filter: blur(6px); background: rgba(255,255,255,0.04); }
     .glow { box-shadow: 0 0 40px rgba(56,189,248,.25), 0 0 80px rgba(56,189,248,.15); }
     .btn { transition: transform .12s ease, box-shadow .12s ease; }
@@ -22,12 +22,13 @@
     code { user-select: all; }
     .parallax {
       background-image: url('assets/basemoon-city.jpg');
+      width: 100%;
       min-height: 400px;
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
-      background-size: contain;
-      background-color: black; /* fill background */
+      background-size: cover;
+      margin: 0;
     }
   </style>
 </head>
