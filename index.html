@@ -35,6 +35,9 @@
       background-repeat: no-repeat;
       background-size: cover;
       margin: 0;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
     }
     /* Fallback for browsers that don't support background-attachment: fixed */
     @media (max-width: 768px) {
@@ -109,6 +112,8 @@
         </div>
       </div>
     </section>
+    <!-- Parallax Section Placed Just Above "Stay in the loop" -->
+    <div class="parallax"></div>
     <section id="socials" class="card rounded-2xl p-6 border border-white/10 mt-10">
       <h2 class="text-xl font-bold mb-3">Stay in the loop</h2>
       <p class="text-slate-300 mb-3">Drop your main channels here when ready. Update anytime.</p>
@@ -124,8 +129,6 @@
       <p>© <span id="year"></span> BASEMOON ($BMX). Not financial advice. Crypto is volatile — don’t invest more than you can afford to meme.</p>
     </div>
   </footer>
-  <!-- Parallax Section Moved to Bottom -->
-  <div class="parallax"></div>
   <script>
     // Copy Button Functionality
     const btn = document.getElementById('copyBtn');
