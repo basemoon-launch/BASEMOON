@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BASEMOON ($BMX) — Community-Driven Meme Token on Base</title>
+  <meta name="description" content="BASEMOON ($BMX) — The organic, community‑driven meme token on Base. 21B max supply. Trade on Uniswap. View on BaseScan and Dexscreener." />
+  <meta property="og:title" content="BASEMOON ($BMX) — Community-Driven Meme Token on Base" />
+  <meta property="og:description" content="21B max supply. Trading on Uniswap. View charts and contract details." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/baseMOON.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/baseMOON.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { color-scheme: dark; }
+    body { background: radial-gradient(1200px 800px at 10% 10%, #10141a, #07090d 60%, #05070a); }
+    .card { backdrop-filter: blur(6px); background: rgba(255,255,255,0.04); }
+    .glow { box-shadow: 0 0 40px rgba(56,189,248,.25), 0 0 80px rgba(56,189,248,.15); }
+    .btn { transition: transform .12s ease, box-shadow .12s ease; }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(56,189,248,.25); }
+    code { user-select: all; }
+  </style>
+</head>
+<body class="text-slate-200 antialiased">
+  <header class="max-w-6xl mx-auto px-6 pt-10 pb-6">
+    <div class="flex items-center gap-4">
+      <img src="/baseMOON.png" alt="BASEMOON Logo" class="w-16 h-16 rounded-full ring-2 ring-cyan-400/40 glow" />
+      <div>
+        <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight">BASEMOON <span class="text-cyan-300">$BMX</span></h1>
+        <p class="text-slate-400">The organic, community‑driven meme token on <span class="text-white font-semibold">Base</span>.</p>
+      </div>
+    </div>
+  </header>
+  <main class="max-w-6xl mx-auto px-6 pb-16">
+    <section class="grid md:grid-cols-2 gap-8 mb-10 items-center">
+      <div class="card rounded-2xl p-6 border border-white/10">
+        <h2 class="text-xl font-bold mb-2">Quick Links</h2>
+        <div class="grid sm:grid-cols-2 gap-3">
+          <a class="btn inline-flex items-center justify-center rounded-xl px-4 py-3 bg-cyan-600/90 hover:bg-cyan-500 text-white font-semibold" href="https://app.uniswap.org/swap?chain=base&outputCurrency=0x2D88D27c69df555Bc13cA418Cca78E29b154F545" target="_blank" rel="noopener">Trade on Uniswap</a>
+          <a class="btn inline-flex items-center justify-center rounded-xl px-4 py-3 bg-slate-800 hover:bg-slate-700 border border-white/10" href="https://basescan.org/token/0x2D88D27c69df555Bc13cA418Cca78E29b154F545" target="_blank" rel="noopener">View on BaseScan</a>
+          <a class="btn inline-flex items-center justify-center rounded-xl px-4 py-3 bg-slate-800 hover:bg-slate-700 border border-white/10" href="https://dexscreener.com/base/0x2D88D27c69df555Bc13cA418Cca78E29b154F545" target="_blank" rel="noopener">Chart on Dexscreener</a>
+          <a class="btn inline-flex items-center justify-center rounded-xl px-4 py-3 bg-slate-800 hover:bg-slate-700 border border-white/10" href="#socials">Follow Updates</a>
+        </div>
+      </div>
+      <div class="card rounded-2xl p-6 border border-white/10">
+        <h2 class="text-xl font-bold mb-3">Contract</h2>
+        <p class="text-sm text-slate-400 mb-2">Deployed to Base mainnet</p>
+        <div class="flex items-center gap-2">
+          <code id="contract" class="text-xs sm:text-sm bg-black/50 border border-white/10 rounded-lg px-3 py-2 break-all">0x2D88D27c69df555Bc13cA418Cca78E29b154F545</code>
+          <button id="copyBtn" class="btn whitespace-nowrap rounded-lg bg-slate-900/70 border border-white/10 px-3 py-2 text-xs">Copy</button>
+        </div>
+        <p id="copied" class="text-emerald-400 text-xs mt-2 hidden">Contract copied ✓</p>
+      </div>
+    </section>
+    <section class="grid md:grid-cols-3 gap-8 mb-10">
+      <div class="card rounded-2xl p-6 border border-white/10 md:col-span-2">
+        <h2 class="text-xl font-bold mb-3">What is BASEMOON?</h2>
+        <p class="text-slate-300 leading-relaxed">BASEMOON ($BMX) is an organic, community‑driven meme token built on <span class="font-semibold">Base</span>. No promises, no fixed roadmaps — just momentum, memes, and the community steering the rocket.</p>
+        <ul class="mt-4 list-disc list-inside text-slate-300 space-y-1">
+          <li>Fair‑vibes launch via community</li>
+          <li>Trading live on Uniswap</li>
+          <li>Transparent contract & on‑chain stats</li>
+        </ul>
+      </div>
+      <div class="card rounded-2xl p-6 border border-white/10">
+        <h3 class="text-lg font-semibold mb-2">Tokenomics</h3>
+        <div class="space-y-2 text-slate-300">
+          <div class="flex items-center justify-between border-b border-white/10 pb-2">
+            <span>Max Supply</span>
+            <span class="font-bold">21,000,000,000</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span>Symbol</span>
+            <span class="font-bold">BMX</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="socials" class="card rounded-2xl p-6 border border-white/10">
+      <h2 class="text-xl font-bold mb-3">Stay in the loop</h2>
+      <p class="text-slate-300 mb-3">Drop your main channels here when ready. Update anytime.</p>
+      <div class="flex flex-wrap gap-3">
+        <a href="#" class="btn rounded-xl px-4 py-2 bg-slate-800 hover:bg-slate-700 border border-white/10">X / Twitter</a>
+        <a href="#" class="btn rounded-xl px-4 py-2 bg-slate-800 hover:bg-slate-700 border border-white/10">Telegram</a>
+        <a href="#" class="btn rounded-xl px-4 py-2 bg-slate-800 hover:bg-slate-700 border border-white/10">Docs</a>
+      </div>
+    </section>
+  </main>
+  <footer class="max-w-6xl mx-auto px-6 pb-10">
+    <div class="text-xs text-slate-500">
+      <p>© <span id="year"></span> BASEMOON ($BMX). Not financial advice. Crypto is volatile — don’t invest more than you can afford to meme.</p>
+    </div>
+  </footer>
+  <script>
+    const btn = document.getElementById('copyBtn');
+    const el = document.getElementById('contract');
+    const msg = document.getElementById('copied');
+    btn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(el.textContent.trim());
+        msg.classList.remove('hidden');
+        setTimeout(()=> msg.classList.add('hidden'), 1500);
+      } catch (e) { console.error(e); }
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
